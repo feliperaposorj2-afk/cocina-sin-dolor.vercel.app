@@ -86,9 +86,11 @@ mark{background:linear-gradient(transparent 55%,#f8d7a8 55%);color:inherit}
 .passo h3{color:#fff;font-size:22px;margin-bottom:8px}
 
 /* Entregável */
-.entrega-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.modulo{background:#fff;border-radius:18px;padding:24px;box-shadow:var(--sombra);display:flex;gap:18px;align-items:flex-start}
-.modulo .ic{flex:0 0 58px;height:58px;border-radius:14px;background:var(--verde-claro);display:grid;place-items:center;font-size:30px}
+.entrega-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.modulo{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column}
+.modulo>div:last-child{padding:20px 22px 24px}
+.modulo .ic{display:block;aspect-ratio:16/9;background:var(--verde-claro);overflow:hidden}
+.modulo .ic img{width:100%;height:100%;object-fit:cover;display:block}
 .modulo h3{font-size:20px;margin-bottom:6px}
 .modulo p{color:var(--suave);font-size:15px}
 .modulo .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--terracota);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
@@ -104,8 +106,9 @@ mark{background:linear-gradient(transparent 55%,#f8d7a8 55%);color:inherit}
 .bonus{background:var(--crema-2)}
 .bonus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .bonus-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column}
-.bonus-capa{height:150px;display:grid;place-items:center;font-size:54px;position:relative}
-.bonus-capa em{position:absolute;top:12px;left:12px;background:var(--terracota);color:#fff;font-style:normal;font-weight:800;font-size:12px;padding:4px 10px;border-radius:99px;letter-spacing:.5px}
+.bonus-capa{height:170px;display:grid;place-items:center;font-size:54px;position:relative;overflow:hidden}
+.bonus-capa img{height:138px;width:auto;max-width:82%;object-fit:contain;border-radius:4px;box-shadow:0 12px 24px rgba(20,35,28,.3);transform:rotate(-3deg)}
+.bonus-capa em{position:absolute;z-index:2;top:12px;left:12px;background:var(--terracota);color:#fff;font-style:normal;font-weight:800;font-size:12px;padding:4px 10px;border-radius:99px;letter-spacing:.5px}
 .bonus-card .c{padding:20px;display:flex;flex-direction:column;flex:1}
 .bonus-card h3{font-size:19px;margin-bottom:8px}
 .bonus-card p{font-size:14.5px;color:var(--suave);flex:1}
@@ -237,6 +240,7 @@ footer p{max-width:760px;margin:0 auto 10px}
 
 /* Responsivo */
 @media (max-width:900px){
+  .entrega-grid{grid-template-columns:1fr 1fr}
   .hero-grid,.marca-box{grid-template-columns:1fr}
   .bonus-grid{grid-template-columns:repeat(2,1fr)}
   .dor-grid,.passos{grid-template-columns:1fr}
@@ -315,12 +319,12 @@ footer p{max-width:760px;margin:0 auto 10px}
     <h2>Todo lo que vas a recibir</h2>
     <p class="sub">Un recetario completo, pensado para la fibromialgia, para que sepas exactamente qué cocinar en cada momento del día.</p>
     <div class="entrega-grid">
-      <div class="modulo"><div class="ic">☀️</div><div><span class="tag">Módulo 1</span><h3>Desayunos que dan energía</h3><p>25 recetas para empezar el día sin pesadez: batidos verdes, avenas, arepas y tortillas antiinflamatorias.</p></div></div>
-      <div class="modulo"><div class="ic">🍲</div><div><span class="tag">Módulo 2</span><h3>Almuerzos y cenas ligeras</h3><p>40 platos completos con pescado, pollo, legumbres y vegetales. Fáciles, rendidores y para toda la familia.</p></div></div>
-      <div class="modulo"><div class="ic">🥣</div><div><span class="tag">Módulo 3</span><h3>Sopas y caldos reconfortantes</h3><p>15 recetas calientes ideales para los días de crisis, cuando no tienes fuerza para cocinar mucho.</p></div></div>
-      <div class="modulo"><div class="ic">🍵</div><div><span class="tag">Módulo 4</span><h3>Jugos, tés e infusiones</h3><p>20 bebidas naturales con cúrcuma, jengibre, manzanilla y frutas para acompañar tu día y tu noche.</p></div></div>
-      <div class="modulo"><div class="ic">🍪</div><div><span class="tag">Módulo 5</span><h3>Snacks y postres sin culpa</h3><p>20 opciones dulces y saladas sin azúcar refinada para cuando llegue el antojo.</p></div></div>
-      <div class="modulo"><div class="ic">🛒</div><div><span class="tag">Módulo 6</span><h3>Guía de alimentos: sí y no</h3><p>La lista de lo que ayuda y lo que inflama, más una lista de compras lista para imprimir.</p></div></div>
+      <div class="modulo"><div class="ic"><img src="mod1.jpg" alt="Desayuno con bowl y leche dorada" loading="lazy"></div><div><span class="tag">Módulo 1</span><h3>Desayunos que dan energía</h3><p>25 recetas para empezar el día sin pesadez: batidos verdes, avenas, arepas y tortillas antiinflamatorias.</p></div></div>
+      <div class="modulo"><div class="ic"><img src="mod2.jpg" alt="Salmón al horno con vegetales y arroz integral" loading="lazy"></div><div><span class="tag">Módulo 2</span><h3>Almuerzos y cenas ligeras</h3><p>40 platos completos con pescado, pollo, legumbres y vegetales. Fáciles, rendidores y para toda la familia.</p></div></div>
+      <div class="modulo"><div class="ic"><img src="mod3.jpg" alt="Crema de calabaza con semillas" loading="lazy"></div><div><span class="tag">Módulo 3</span><h3>Sopas y caldos reconfortantes</h3><p>15 recetas calientes ideales para los días de crisis, cuando no tienes fuerza para cocinar mucho.</p></div></div>
+      <div class="modulo"><div class="ic"><img src="mod4.jpg" alt="Jugos naturales y té de jengibre" loading="lazy"></div><div><span class="tag">Módulo 4</span><h3>Jugos, tés e infusiones</h3><p>20 bebidas naturales con cúrcuma, jengibre, manzanilla y frutas para acompañar tu día y tu noche.</p></div></div>
+      <div class="modulo"><div class="ic"><img src="mod5.jpg" alt="Bolitas de avena y cacao con fresas" loading="lazy"></div><div><span class="tag">Módulo 5</span><h3>Snacks y postres sin culpa</h3><p>20 opciones dulces y saladas sin azúcar refinada para cuando llegue el antojo.</p></div></div>
+      <div class="modulo"><div class="ic"><img src="mod6.jpg" alt="Verduras, legumbres y especias para la lista de compras" loading="lazy"></div><div><span class="tag">Módulo 6</span><h3>Guía de alimentos: sí y no</h3><p>La lista de lo que ayuda y lo que inflama, más una lista de compras lista para imprimir.</p></div></div>
     </div>
     <div class="formato">
       <span>📱 Acceso inmediato en tu celular</span>
@@ -343,19 +347,19 @@ footer p{max-width:760px;margin:0 auto 10px}
     <p class="sub">Incluidos gratis en el Plan Completo.</p>
     <div class="bonus-grid">
       <div class="bonus-card">
-        <div class="bonus-capa" style="background:linear-gradient(135deg,#e7f0ea,#b9d6c4)"><em>BONO 1</em>📅</div>
+        <div class="bonus-capa" style="background:linear-gradient(135deg,#e7f0ea,#b9d6c4)"><em>BONO 1</em><img src="bono1.jpg" alt="Portada del Plan Antiinflamatorio de 21 Días" loading="lazy"></div>
         <div class="c"><h3>Plan Antiinflamatorio de 21 Días</h3><p>Tu menú día por día, ya armado. Solo abres, cocinas y sigues. Cero decisiones, cero estrés.</p><div class="valor"><b>GRATIS en el Plan Completo</b></div></div>
       </div>
       <div class="bonus-card">
-        <div class="bonus-capa" style="background:url(foto_infusion.jpg) center 35%/cover"><em>BONO 2</em></div>
+        <div class="bonus-capa" style="background:linear-gradient(135deg,#fde6d6,#f4b999)"><em>BONO 2</em><img src="bono2.jpg" alt="Portada de Infusiones para Dormir Profundo" loading="lazy"></div>
         <div class="c"><h3>Infusiones para Dormir Profundo</h3><p>10 bebidas naturales para relajarte al final del día y preparar tu cuerpo para descansar.</p><div class="valor"><b>GRATIS en el Plan Completo</b></div></div>
       </div>
       <div class="bonus-card">
-        <div class="bonus-capa" style="background:linear-gradient(135deg,#fff3d0,#f5d57f)"><em>BONO 3</em>🧘‍♀️</div>
+        <div class="bonus-capa" style="background:linear-gradient(135deg,#fff3d0,#f5d57f)"><em>BONO 3</em><img src="bono3.jpg" alt="Portada de Estiramientos Suaves de 10 Minutos" loading="lazy"></div>
         <div class="c"><h3>Estiramientos Suaves de 10 Minutos</h3><p>Rutina guiada para hacer en casa, incluso en la cama, pensada para cuerpos con dolor.</p><div class="valor"><b>GRATIS en el Plan Completo</b></div></div>
       </div>
       <div class="bonus-card">
-        <div class="bonus-capa" style="background:linear-gradient(135deg,#e6e4f5,#bdb6e6)"><em>BONO 4</em>📓</div>
+        <div class="bonus-capa" style="background:linear-gradient(135deg,#e6e4f5,#bdb6e6)"><em>BONO 4</em><img src="bono4.jpg" alt="Portada del Diario del Dolor y los Alimentos" loading="lazy"></div>
         <div class="c"><h3>Diario del Dolor y los Alimentos</h3><p>Plantilla imprimible para descubrir qué alimentos te hacen bien y cuáles disparan tus crisis.</p><div class="valor"><b>GRATIS en el Plan Completo</b></div></div>
       </div>
     </div>
