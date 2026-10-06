@@ -106,9 +106,10 @@ mark{background:linear-gradient(transparent 55%,#f8d7a8 55%);color:inherit}
 .bonus{background:var(--crema-2)}
 .bonus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .bonus-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column}
-.bonus-capa{height:170px;display:grid;place-items:center;font-size:54px;position:relative;overflow:hidden}
-.bonus-capa img{height:138px;width:auto;max-width:82%;object-fit:contain;border-radius:4px;box-shadow:0 12px 24px rgba(20,35,28,.3);transform:rotate(-3deg)}
-.bonus-capa em{position:absolute;z-index:2;top:12px;left:12px;background:var(--terracota);color:#fff;font-style:normal;font-weight:800;font-size:12px;padding:4px 10px;border-radius:99px;letter-spacing:.5px}
+.bonus-capa{height:auto;aspect-ratio:1/1;display:grid;place-items:center;font-size:54px;position:relative;overflow:hidden}
+.bonus-capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bonos-todos{display:block;width:100%;max-width:900px;margin:0 auto 34px;border-radius:22px;box-shadow:var(--sombra)}
+.bonus-capa em{display:none;position:absolute;z-index:2;top:12px;left:12px;background:var(--terracota);color:#fff;font-style:normal;font-weight:800;font-size:12px;padding:4px 10px;border-radius:99px;letter-spacing:.5px}
 .bonus-card .c{padding:20px;display:flex;flex-direction:column;flex:1}
 .bonus-card h3{font-size:19px;margin-bottom:8px}
 .bonus-card p{font-size:14.5px;color:var(--suave);flex:1}
@@ -277,7 +278,7 @@ footer p{max-width:760px;margin:0 auto 10px}
         <li>Ingredientes que encuentras en cualquier mercado de Latinoamérica</li>
       </ul>
       <a href="#precios" class="btn">Quiero mis recetas ahora</a>
-      <div class="prova">🌎 Hecho para mujeres de toda Latinoamérica · 🔒 Garantía de 7 días</div>
+      <div class="prova">🌎 Hecho para mujeres de toda Latinoamérica · 🔒 Garantía de 30 días</div>
     </div>
     <div class="mock"><img src="hero.jpg" alt="Recetario Cocina Sin Dolor y sus 4 bonos" width="1400" height="933"></div>
   </div>
@@ -345,6 +346,7 @@ footer p{max-width:760px;margin:0 auto 10px}
   <div class="wrap">
     <h2>Y además, llévate <span class="destaque">4 bonos exclusivos</span></h2>
     <p class="sub">Incluidos gratis en el Plan Completo.</p>
+    <img class="bonos-todos" src="bonos_todos.jpg" alt="Los 4 bonos de Cocina Sin Dolor" loading="lazy">
     <div class="bonus-grid">
       <div class="bonus-card">
         <div class="bonus-capa" style="background:linear-gradient(135deg,#e7f0ea,#b9d6c4)"><em>BONO 1</em><img src="bono1.jpg" alt="Portada del Plan Antiinflamatorio de 21 Días" loading="lazy"></div>
@@ -467,7 +469,7 @@ footer p{max-width:760px;margin:0 auto 10px}
         <div class="preco"><sup>$</sup>12</div>
         <div class="unico">pago único · USD</div>
         <a href="#" class="btn" id="btnCompleto">Quiero el Plan Completo</a>
-        <div class="seguro">🔒 Pago 100% seguro · Garantía de 7 días</div>
+        <div class="seguro">🔒 Pago 100% seguro · Garantía de 30 días</div>
       </div>
     </div>
   </div>
@@ -477,10 +479,10 @@ footer p{max-width:760px;margin:0 auto 10px}
 <section style="padding-top:0">
   <div class="wrap">
     <div class="garantia">
-      <div class="selo-g"><div><b>7</b>DÍAS DE<br>GARANTÍA</div></div>
+      <div class="selo-g"><div><b>30</b>DÍAS DE<br>GARANTÍA</div></div>
       <div>
         <h3>Riesgo cero para ti</h3>
-        <p>Prueba las recetas durante 7 días. Si por cualquier motivo sientes que no son para ti, pides el reembolso y te devolvemos el 100% de tu dinero. Sin preguntas y sin letra chica.</p>
+        <p>Prueba las recetas durante 30 días. Si por cualquier motivo sientes que no son para ti, pides el reembolso y te devolvemos el 100% de tu dinero. Sin preguntas y sin letra chica.</p>
       </div>
     </div>
   </div>
@@ -497,7 +499,7 @@ footer p{max-width:760px;margin:0 auto 10px}
       <details><summary>¿Tengo que dejar mis medicamentos?</summary><p>No. Las recetas son un complemento a tu tratamiento. Nunca dejes ni cambies tu medicación sin hablar con tu médico.</p></details>
       <details><summary>¿Sirve si no sé cocinar bien?</summary><p>Sí. Las recetas son paso a paso, con pocos ingredientes, y la mayoría está lista en 15 a 30 minutos.</p></details>
       <details><summary>¿El pago es mensual?</summary><p>No. Es un pago único y el acceso es de por vida, incluidas las actualizaciones.</p></details>
-      <details><summary>¿Y si no me gusta?</summary><p>Tienes 7 días de garantía. Si no te gusta, te devolvemos el 100% de tu dinero.</p></details>
+      <details><summary>¿Y si no me gusta?</summary><p>Tienes 30 días de garantía. Si no te gusta, te devolvemos el 100% de tu dinero.</p></details>
     </div>
   </div>
 </section>
