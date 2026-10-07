@@ -113,6 +113,13 @@ mark{background:linear-gradient(transparent 55%,#f8d7a8 55%);color:inherit}
 .bonus-card .c{padding:20px;display:flex;flex-direction:column;flex:1}
 .bonus-card h3{font-size:19px;margin-bottom:8px}
 .bonus-card p{font-size:14.5px;color:var(--suave);flex:1}
+.bonus-card.wide{grid-column:1/-1;flex-direction:row;align-items:stretch}
+.bonus-card.wide .bonus-capa{width:300px;flex:none}
+.bonus-card.wide .c{justify-content:center;padding:28px 32px}
+.bonus-card.wide h3{font-size:24px}
+.bonus-card.wide p{flex:none;font-size:16px}
+.bonus-card .nuevo{display:inline-block;align-self:flex-start;background:var(--terracota);color:#fff;font-size:12px;font-weight:800;letter-spacing:.5px;padding:4px 10px;border-radius:99px;margin-bottom:10px}
+@media(max-width:640px){.bonus-card.wide{flex-direction:column}.bonus-card.wide .bonus-capa{width:100%}.bonus-card.wide .c{padding:20px}}
 .valor{margin-top:14px;font-weight:700;font-size:15px}
 .valor b{color:var(--verde-2)}
 
@@ -344,7 +351,7 @@ footer p{max-width:760px;margin:0 auto 10px}
 <!-- BÔNUS -->
 <section class="bonus">
   <div class="wrap">
-    <h2>Y además, llévate <span class="destaque">4 bonos exclusivos</span></h2>
+    <h2>Y además, llévate <span class="destaque">5 bonos exclusivos</span></h2>
     <p class="sub">Incluidos gratis en el Plan Completo.</p>
     <img class="bonos-todos" src="bonos_todos.jpg" alt="Los 4 bonos de Cocina Sin Dolor" loading="lazy">
     <div class="bonus-grid">
@@ -362,7 +369,11 @@ footer p{max-width:760px;margin:0 auto 10px}
       </div>
       <div class="bonus-card">
         <div class="bonus-capa" style="background:linear-gradient(135deg,#e6e4f5,#bdb6e6)"><em>BONO 4</em><img src="bono4.jpg" alt="Portada del Diario del Dolor y los Alimentos" loading="lazy"></div>
-        <div class="c"><h3>Diario del Dolor y los Alimentos</h3><p>Plantilla imprimible para descubrir qué alimentos te hacen bien y cuáles disparan tus crisis.</p><div class="valor"><b>GRATIS en el Plan Completo</b></div></div>
+        <div class="c"><h3>Diario del Dolor y los Alimentos</h3><p>Plantilla imprimible para descubrir qué alimentos te hacen bien y cuáles disparan tus crisis. Incluye tu mapa personal y una guía para preparar tu consulta médica.</p><div class="valor"><b>GRATIS en el Plan Completo</b></div></div>
+      </div>
+      <div class="bonus-card wide">
+        <div class="bonus-capa" style="background:#fde6d6"><em>BONO 5</em><img src="bono5.jpg" alt="Portada de la Guía para tu Familia" loading="lazy"></div>
+        <div class="c"><span class="nuevo">NUEVO</span><h3>Guía para tu Familia</h3><p>Para entregar a tu pareja o a tus hijos: explica de forma simple por qué duele aunque no se vea, las frases que lastiman sin querer, mitos y verdades, y 10 cosas concretas que pueden hacer por ti. Porque sentirte comprendida en casa también es parte del cuidado.</p><div class="valor"><b>GRATIS en el Plan Completo</b></div></div>
       </div>
     </div>
   </div>
@@ -448,6 +459,7 @@ footer p{max-width:760px;margin:0 auto 10px}
           <li class="nao">Infusiones para dormir</li>
           <li class="nao">Estiramientos suaves</li>
           <li class="nao">Diario del dolor</li>
+          <li class="nao">Guía para tu familia</li>
         </ul>
         <div class="preco"><sup>$</sup>9,90</div>
         <div class="unico">pago único · USD</div>
@@ -456,7 +468,7 @@ footer p{max-width:760px;margin:0 auto 10px}
       <div class="plano top">
         <div class="fita">⭐ RECOMENDADO</div>
         <h3>Plan Completo</h3>
-        <div class="desc">Recetario + 4 bonos exclusivos</div>
+        <div class="desc">Recetario + 5 bonos exclusivos</div>
         <ul>
           <li>Recetario Cocina Sin Dolor (120+ recetas)</li>
           <li>Guía especial: Días de crisis (10 recetas sin cuchillo)</li>
@@ -466,6 +478,7 @@ footer p{max-width:760px;margin:0 auto 10px}
           <li><b>Bono 2:</b> Infusiones para Dormir Profundo</li>
           <li><b>Bono 3:</b> Estiramientos Suaves de 10 Min</li>
           <li><b>Bono 4:</b> Diario del Dolor y los Alimentos</li>
+          <li><b>Bono 5:</b> Guía para tu Familia</li>
         </ul>
         <div class="de">Todo por solo</div>
         <div class="preco"><sup>$</sup>12</div>
@@ -526,7 +539,7 @@ footer p{max-width:760px;margin:0 auto 10px}
     <button class="fechar" id="popFechar" aria-label="Cerrar">×</button>
     <div class="alerta">¡Espera! Oferta única</div>
     <h3 id="popTitulo">Llévate TODO por solo $2,10 más</h3>
-    <p>Por menos de lo que cuesta un café, recibes el Plan Completo con los <b>4 bonos</b> que completan tu rutina.</p>
+    <p>Por menos de lo que cuesta un café, recibes el Plan Completo con los <b>5 bonos</b> que completan tu rutina.</p>
     <div class="mini">
       <span>📅 Plan de 21 días</span><span>🌙 Infusiones para dormir</span>
       <span>🧘‍♀️ Estiramientos suaves</span><span>📓 Diario del dolor</span>
