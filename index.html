@@ -567,9 +567,10 @@ btnCompleto.href = comUtm(CHECKOUT_COMPLETO);
 popSim.href = comUtm(CHECKOUT_COMPLETO);
 popNao.href = comUtm(CHECKOUT_BASICO);
 
-// Pixel: InitiateCheckout quando clicar para ir ao checkout
+// Pixel: clique no botão de compra (evento próprio).
+// O InitiateCheckout oficial é enviado só pela Hotmart, para não contar 2 vezes.
 function marcaCheckout(valor){
-  return function(){ if (window.fbq) fbq('track', 'InitiateCheckout', {value: valor, currency: 'USD'}); };
+  return function(){ if (window.fbq) fbq('trackCustom', 'ClicCheckout', {value: valor, currency: 'USD'}); };
 }
 btnCompleto.addEventListener("click", marcaCheckout(12));
 popSim.addEventListener("click", marcaCheckout(12));
