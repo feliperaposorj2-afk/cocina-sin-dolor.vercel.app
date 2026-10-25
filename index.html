@@ -266,6 +266,24 @@ footer p{max-width:760px;margin:0 auto 10px}
   .cargo{text-align:center}
   .btn{width:100%;font-size:17px;padding:17px 18px}
 }
+
+/* MÁS QUE RECETAS */
+.mas{background:#fff}
+.mas-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.mas-card{background:var(--crema);border-radius:18px;padding:26px 24px;box-shadow:var(--sombra);display:flex;flex-direction:column;gap:12px}
+.mas-card .q{font-size:13px;font-weight:700;color:var(--terracota);text-transform:uppercase;letter-spacing:.5px}
+.mas-card h3{font-size:22px}
+.mas-card .cita{background:#fff;border-left:4px solid var(--verde-2);border-radius:10px;padding:14px 16px;font-size:15px;color:var(--texto);font-style:italic}
+.mas-card ul{padding-left:20px;font-size:15px;color:var(--suave)}
+.mas-card ul li{margin:4px 0}
+.mas-card .donde{margin-top:auto;font-size:13px;font-weight:700;color:var(--verde);background:var(--verde-claro);border-radius:999px;padding:6px 12px;align-self:flex-start}
+.frases{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border-radius:10px;overflow:hidden}
+.frases th{background:var(--verde);color:#fff;text-align:left;padding:8px 10px;font-weight:600}
+.frases td{padding:8px 10px;border-top:1px solid var(--crema-2);vertical-align:top}
+.frases td:first-child{font-style:italic;color:var(--rojo);width:38%}
+.mas-final{margin:36px auto 0;max-width:760px;text-align:center;font-size:19px}
+.mas-final strong{color:var(--verde)}
+@media(max-width:760px){.mas-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -305,6 +323,66 @@ footer p{max-width:760px;margin:0 auto 10px}
       <div class="dor-card"><b>Te sientes sola</b><span>Tu familia te quiere, pero muchas veces piensan que "es exageración".</span></div>
     </div>
     <p class="virada">Lo que casi nadie te dice: <strong>lo que pones en tu plato todos los días también influye en cómo se siente tu cuerpo.</strong> Y la buena noticia es que eso <strong>sí está en tus manos cambiarlo</strong>, incluso en los días difíciles: con <strong>recetas simples y rápidas, de pocos pasos y con poco esfuerzo</strong>, pensadas para cuando el dolor es intenso.</p>
+  </div>
+</section>
+
+<!-- MÁS QUE RECETAS -->
+<section class="mas" id="mas-que-recetas">
+  <div class="wrap">
+    <h2>Cocina Sin Dolor es <span class="destaque">mucho más que recetas</span></h2>
+    <p class="sub">Además de qué cocinar, encuentras herramientas para organizar tu energía, descansar mejor y que tu familia entienda lo que vives. Mira un poco de lo que hay adentro:</p>
+    <div class="mas-grid">
+
+      <div class="mas-card">
+        <span class="q">Para los días en que no alcanza la energía</span>
+        <h3>🔋 Tu batería de energía</h3>
+        <div class="cita">"Imagina que cada mañana recibes una batería de energía. No sabes cuánto va a durar ese día, y si la gastas toda en las primeras horas, puede faltarte para el resto."</div>
+        <ul>
+          <li>Cómo dividir una receta en etapas: lava hoy, cocina mañana</li>
+          <li>Un plan simple para los días difíciles: para, elige, baja el ritmo, descansa</li>
+          <li>10 frases para los días difíciles y 10 recetas casi sin cuchillo</li>
+        </ul>
+        <span class="donde">Guía Días de crisis · en los dos planes</span>
+      </div>
+
+      <div class="mas-card">
+        <span class="q">Para cuando nadie entiende</span>
+        <h3>🤝 Guía para tu Familia</h3>
+        <table class="frases">
+          <tr><th>Lo que te dicen</th><th>Lo que la guía les explica</th></tr>
+          <tr><td>"Es psicológico."</td><td>El dolor es real. Eso no significa que lo estés inventando.</td></tr>
+          <tr><td>"Pero ayer estabas bien."</td><td>La fibromialgia varía de un día a otro. Ayer fue un día mejor; hoy no.</td></tr>
+          <tr><td>"Es exageración."</td><td>Frases así suman al dolor físico el dolor de no ser creída.</td></tr>
+        </table>
+        <ul><li>Para entregar a tu pareja o a tus hijos, con mitos, verdades y cosas concretas que pueden hacer por ti</li></ul>
+        <span class="donde">Bono 5 · Plan Completo</span>
+      </div>
+
+      <div class="mas-card">
+        <span class="q">Para llegar a la consulta con todo claro</span>
+        <h3>📓 Diario del Dolor y los Alimentos</h3>
+        <ul>
+          <li>Anotas cada día cómo te sentiste, de 0 a 10, y qué comiste</li>
+          <li>Al final de la semana descubres qué días fueron mejores y qué recetas repetir</li>
+          <li>Tu mapa personal y una guía para preparar tu consulta, con las preguntas para llevar a tu médico</li>
+        </ul>
+        <span class="donde">Bono 4 · Plan Completo</span>
+      </div>
+
+      <div class="mas-card">
+        <span class="q">Para las noches largas y las mañanas rígidas</span>
+        <h3>🌙 Tu ritual de la noche y de la mañana</h3>
+        <ul>
+          <li>10 infusiones naturales y hábitos simples para preparar tu cuerpo para descansar</li>
+          <li>Estiramientos suaves de 10 minutos que puedes hacer incluso en la cama, al despertar o antes de dormir</li>
+          <li>Un plan de 21 días con el menú ya armado: solo abres, cocinas y sigues</li>
+        </ul>
+        <span class="donde">Bonos 1, 2 y 3 · Plan Completo</span>
+      </div>
+
+    </div>
+    <p class="mas-final">No es una dieta más. Es <strong>un apoyo práctico para tus días reales</strong>: la cocina, el descanso, el movimiento y tu familia, en un solo lugar. Siempre junto a tu tratamiento.</p>
+    <div style="text-align:center;margin-top:24px"><a href="#precios" class="btn">Quiero todo esto</a></div>
   </div>
 </section>
 
